@@ -1,13 +1,116 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dana_Polish</title>
+</head>
+<body>
+  <header class="page-header"> 
+
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="./index.html" class="header-logo">Web<span class="header-logo-span">Studio</span></a>
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html" class="nav-link current">Studio</a>
+            </li>
+            <li> <a href="" class="nav-link">Portfolio</a></li>
+            <li> <a href="" class="nav-link">Contacts</a> </li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+        <button class="burger-btn" type="button" data-menu-open> <!----Кнопка на моб версии откр ---------- -->
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!-- ----------------------Моб меню----------------------------------- -->
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button data-menu-close type="button" class="mobile-menu-close modal-close">
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-menu-list">
+            <li>
+              <a href="./index.html" class="mobile-link-title mobile-current">Studio</a>
+            </li>
+            <li> <a href="" class="mobile-link-title">Portfolio</a> </li>
+            <li>
+              <a href="" class="mobile-link-title">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-contacts">
+            <li class="mobile-link-adress">
+              <a class="menu-link-adress mobile-number-current" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-menu-link-item">
+              <a class="menu-link-adress" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <div>
+            <ul class="social-net-list-menu">
+              <li class="social-net-list-item">
+                <a class="social-net-link" href="">
+                  <svg class="social-logo social-logo-team" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net-list-item">
+                <a class="social-net-link" href="">
+                  <svg class="social-logo social-logo-team" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net-list-item">
+                <a class="social-net-link" href="">
+                  <svg class="social-logo social-logo-team" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net-list-item">
+                <a class="social-net-link" href="">
+                  <svg class="social-logo social-logo-team" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </address>
+      </div>
+    </div>
+  
+    <main>
+      <section class="business">
+        <div class="container">
+          <h1 class="main-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="button" data-modal-open>
+            Order Service
+          </button>
+        </div>
+      </section>
+
+</body>
 </html>
